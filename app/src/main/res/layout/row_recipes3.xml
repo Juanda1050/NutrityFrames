@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="recipes3RowModel" type="com.application.app.modules.recipes2.data.model.Recipes3RowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_4">
+        <TextView android:ellipsize="end" android:id="@+id/txtSushi"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_45pxh"
+            android:layout_marginStart="@dimen/_45pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{recipes3RowModel.txtSushi}"
+            style="@style/txtRobotoromanmedium15" tools:text="@string/lbl_sushi"/>
+        <ImageView android:id="@+id/imageDesayuno1"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_48pxh"
+            android:layout_marginBottom="@dimen/_24pxv"
+            android:layout_marginEnd="@dimen/_45pxh"
+            android:layout_marginStart="@dimen/_45pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="@dimen/_48pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_desayuno1_4"/>
+    </LinearLayout>
+</layout>

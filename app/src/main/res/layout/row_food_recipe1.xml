@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="foodRecipe1RowModel" type="com.application.app.modules.foodrecipe.data.model.FoodRecipe1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <TextView android:ellipsize="end" android:id="@+id/txt250Kcal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{foodRecipe1RowModel.txt250Kcal}"
+            style="@style/txtRobotoromanregular12" tools:text="@string/lbl_250_kcal"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtCaloras"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4pxh"
+            android:layout_marginStart="@dimen/_5pxh"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{foodRecipe1RowModel.txtCaloras}"
+            style="@style/txtRobotoromanlight10" tools:text="@string/lbl_calor_as"/>
+    </LinearLayout>
+</layout>

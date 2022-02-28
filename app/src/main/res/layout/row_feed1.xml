@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="feed1RowModel" type="com.application.app.modules.feed.data.model.Feed1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:id="@+id/linearGroup146"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtProtenas"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.49" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{feed1RowModel.txtProtenas}"
+                style="@style/txtRobotoromanmedium12" tools:text="@string/lbl_prote_nas"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txt27122G"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_53pxh"
+                android:layout_weight="0.51" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{feed1RowModel.txt27122G}"
+                style="@style/txtRobotoromanregular12" tools:text="@string/lbl_27_122_g"/>
+        </LinearLayout>
+        <View android:background="@color/green_500"
+            android:id="@+id/lineLine2"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_160pxh"/>
+    </LinearLayout>
+</layout>

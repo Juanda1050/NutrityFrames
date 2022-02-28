@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="needsOne1RowModel" type="com.application.app.modules.needsone.data.model.NeedsOne1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylegray_1">
+        <ImageView android:id="@+id/imagePerdidadepeso"
+            android:layout_height="@dimen/_48pxh"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="@dimen/_48pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_perdidadepeso"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearGroup37"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginEnd="@dimen/_55pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_weight="0.77" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtBajarPeso"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{needsOne1RowModel.txtBajarPeso}"
+                style="@style/txtRobotoromanmedium18" tools:text="@string/lbl_bajar_peso"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtMaximizaLaPr"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{needsOne1RowModel.txtMaximizaLaPr}"
+                style="@style/txtRobotoromanregular12" tools:text="@string/msg_maximiza_la_p_r"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

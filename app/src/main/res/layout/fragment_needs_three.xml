@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="needsThreeVM" type="com.application.app.modules.needsthree.data.viewmodel.NeedsThreeVM"/>
+    </data>
+    <ScrollView android:clipToPadding="false"
+        android:fillViewport="true"
+        android:id="@+id/scrollViewScrollview"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearGroup69"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_56pxh"
+            android:layout_marginStart="@dimen/_55pxh"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPesoActual"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_50pxh"
+                android:layout_marginStart="@dimen/_50pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{needsThreeVM.needsThreeModel.txtPesoActual}"
+                style="@style/txtRobotoromanregular18" tools:text="@string/lbl_peso_actual"/>
+            <EditText android:ellipsize="end"
+                android:hint="@string/lbl_70_kg"
+                android:id="@+id/et70Kg"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_25pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_7pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_1pxv"
+                android:singleLine="true"
+                android:text="@={needsThreeVM.needsThreeModel.et70KgValue}"
+                android:textColorHint="@color/gray_500" style="@style/etRobotoromanmedium14"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPesoObjetivo"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_50pxh"
+                android:layout_marginStart="@dimen/_50pxh"
+                android:layout_marginTop="@dimen/_25pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{needsThreeVM.needsThreeModel.txtPesoObjetivo}"
+                style="@style/txtRobotoromanregular18" tools:text="@string/lbl_peso_objetivo"/>
+            <EditText android:ellipsize="end"
+                android:hint="@string/lbl_60_kg"
+                android:id="@+id/et60Kg"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_7pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_1pxv"
+                android:singleLine="true"
+                android:text="@={needsThreeVM.needsThreeModel.et60KgValue}"
+                android:textColorHint="@color/gray_500" style="@style/etRobotoromanmedium14"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnTerminar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_49pxh"
+                android:layout_marginStart="@dimen/_50pxh"
+                android:layout_marginTop="@dimen/_64pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_terminar"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_terminar"/>
+        </LinearLayout>
+    </ScrollView>
+</layout>

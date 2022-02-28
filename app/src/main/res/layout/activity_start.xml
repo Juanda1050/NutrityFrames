@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="startVM" type="com.application.app.modules.start.data.viewmodel.StartVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearStart"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/frameRectangle6"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_340pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_340pxh" style="@style/groupStylecornerRadius">
+            <ImageView android:id="@+id/image20631"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_260pxh"
+                android:layout_marginBottom="@dimen/_40pxv"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_40pxv"
+                android:layout_width="@dimen/_293pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_20631}" tools:src="@drawable/img_20631"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearTexto"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtNutricinHecha"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{startVM.startModel.txtNutricinHecha}"
+                style="@style/txtRobotoromanmedium24" tools:text="@string/msg_nutrici_n_hecha"/>
+            <TextView android:gravity="start"
+                android:id="@+id/txtDescubreUnPla"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:text="@{startVM.startModel.txtDescubreUnPla}"
+                style="@style/txtRobotoromanregular14" tools:text="@string/msg_descubre_un_pla"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnRegistrarse"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_50pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_width="@dimen/_150pxh"
+            android:paddingBottom="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_28pxh"
+            android:paddingStart="@dimen/_28pxh"
+            android:paddingTop="@dimen/_15pxv" android:singleLine="true"
+            android:text="@string/lbl_registrarse"
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_registrarse"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtYaTienesCuen"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{startVM.startModel.txtYaTienesCuen}"
+            style="@style/txtRobotoromanmedium13" tools:text="@string/msg_ya_tienes_cuen"/>
+    </LinearLayout>
+</layout>

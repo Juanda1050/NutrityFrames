@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="feed2RowModel" type="com.application.app.modules.feed.data.model.Feed2RowModel"/>
+    </data>
+    <LinearLayout android:gravity="end" android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:id="@+id/linearGroup152"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end" android:id="@+id/txtHuevo"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.37" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{feed2RowModel.txtHuevo}"
+                style="@style/txtRobotoromanregular14" tools:text="@string/lbl_huevo"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txt2Unidades"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_191pxh"
+                android:layout_weight="0.63" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{feed2RowModel.txt2Unidades}"
+                style="@style/txtRobotoromanregular14" tools:text="@string/lbl_2_unidades"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txt157Kcal"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{feed2RowModel.txt157Kcal}"
+            style="@style/txtRobotoromanregular12_1" tools:text="@string/lbl_157_kcal"/>
+    </LinearLayout>
+</layout>

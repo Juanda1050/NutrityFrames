@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.application.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.application.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity android:exported="true"
+            android:name="com.application.app.modules.recipes2.ui.Recipes2Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.application.app.modules.needsthree1.ui.NeedsThree1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.preview.ui.PreviewActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.foodrecipe.ui.FoodRecipeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.recipes.ui.RecipesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.configuracin.ui.ConfiguraciNActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.feed.ui.FeedActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.letsstart.ui.LetSStartActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.needsone.ui.NeedsOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.start.ui.StartActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.register.ui.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.login.ui.LoginActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.needstwo1.ui.NeedsTwo1Activity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

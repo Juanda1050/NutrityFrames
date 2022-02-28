@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="drawerItemMenCalorAsModel" type="com.application.app.modules.itemmencaloras.data.model.DrawerItemMenCalorAsModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameGroup134"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyle">
+        <View android:background="@color/white_A700"
+            android:id="@+id/viewMenu" android:layout_gravity="start"
+            android:layout_height="@dimen/_640pxh" android:layout_width="@dimen/_260pxh"/>
+        <LinearLayout android:id="@+id/linearSide"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearPersonalinfo"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearDatos"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtUser"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{drawerItemMenCalorAsModel.txtUser}"
+                        style="@style/txtRobotoromanmedium18" tools:text="@string/lbl_user"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtCalorasObjeti"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{drawerItemMenCalorAsModel.txtCalorasObjeti}"
+                        style="@style/txtRobotoromanregular14" tools:text="@string/msg_calor_as_objeti3"/>
+                </LinearLayout>
+                <View android:background="@color/gray_400"
+                    android:id="@+id/lineLine1"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginTop="@dimen/_25pxv" android:layout_width="@dimen/_230pxh"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearOpciones"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearGroup135"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylegreen_500_63cornerRadius">
+                    <ImageView android:id="@+id/imageHogar13"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginBottom="@dimen/_11pxv"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_12pxv"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_hogar13_1"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtCaloras"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_19pxv"
+                        android:layout_marginEnd="@dimen/_99pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_weight="0.65"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{drawerItemMenCalorAsModel.txtCaloras}"
+                        style="@style/txtRobotoromanmedium16_1" tools:text="@string/lbl_calor_as"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:gravity="start"
+                    android:id="@+id/recyclerMencaloras"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_31pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_158pxh}" tools:itemCount="3" tools:listitem="@layout/row_item_men_calor_as"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
